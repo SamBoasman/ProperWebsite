@@ -42,6 +42,10 @@
     background-color: var(--highlight1);
 }
 
+.hero-container {
+    padding: 0.5rem calc((100vw - 1300px) / 2);
+}
+
 @media screen and (max-width: 768px) {
     body.active {
         overflow-y: hidden;
