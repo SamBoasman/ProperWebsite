@@ -1,7 +1,7 @@
 :root {
     --dark: rgb(37, 37, 37);
     --light: #fff;
-    --highlight1: rgb(218, 22, 22);
+    --highlight1: rgb(255, 50, 50);
     --highlightFaded: rgb(255, 133, 133);
 }
 
@@ -42,7 +42,7 @@
 }
 
 .highlightBar {
-    background-color: red;
+    background-color: var(--highlight1);
     font-size: 0.25rem;
 }
 
