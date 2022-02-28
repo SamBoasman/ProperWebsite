@@ -2,19 +2,20 @@
     --dark: rgb(37, 37, 37);
     --light: #fff;
     --highlight1: rgb(218, 22, 22);
+    --highlightFaded: rgb(255, 133, 133);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar {
     background: var(--dark);
     height: 60px;
-    padding: 0.5rem calc((100vw - 1300px) / 2);
+    padding: 0.5rem calc((100vw - 1200px) / 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,19 +32,65 @@
 .navbar__link {
     color: var(--light);
     text-decoration: none;
-    padding: 0rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .navbar__link:hover {
-    color: var(--highlight1);
+    color: var(--light);
+    background-color: var(--highlight1);
+    border-radius: 50px;
 }
 
-.navbar__toggle .bar:hover {
-    background-color: var(--highlight1);
+.highlightBar {
+    background-color: red;
+    font-size: 0.25rem;
 }
 
 .hero-container {
-    padding: 0.5rem calc((100vw - 1300px) / 2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+    padding: 0.25rem calc((100vw - 1200px) / 2) 0rem;
+}
+
+.left-column {
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--dark);
+    padding: 0rem 2rem;
+}
+
+.left-column h1 {
+    padding: 1rem 0rem;
+    font-weight: 100;
+}
+
+.left-column p {
+    padding: 1rem 0rem;
+}
+
+.right-column {
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0rem 2rem;
+}
+
+.button {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: var(--light);
+    background-color: var(--highlight1);
+    border-radius: 50px;
+}
+
+.button:hover {
+    background-color: var(--highlightFaded);
 }
 
 @media screen and (max-width: 768px) {
